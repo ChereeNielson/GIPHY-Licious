@@ -1,31 +1,37 @@
 html {
     background: url("../images/bean3.png") no-repeat center center fixed,
                 url("../images/red.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
     background-size: contain;
-    /* -moz-background-size: cover;
-    -o-background-size: cover; */
-    /* background-position: 0 100%; */
     background-position: center;
+    background-color: black;
 }
 
-body[class=bg-secondary] {
+body.bg-secondary {
     margin: 0;
-}
-
-#sitcomButtons {
-    
+    background-color: black !important;
 }
 
 h1 {
     font-size: 6vw;
     font-family: 'Courier New', Courier, monospace;
-    color: black;
     text-align: center;
+}
+
+#mainText {
+    color: white;
 }
 
 button[type=button] {
     background-color: black;
     border: 1px solid;
     border-color: red;
+}
+button[type=button]:hover {
+    background-color: red;
+    border-color: transparent;
+}
+
+.container {
+    background-color: black;
+    padding: 10px;
 }
