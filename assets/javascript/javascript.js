@@ -1,17 +1,17 @@
 $(document).ready(function () {
 
-    //An array with a list of TV sitcoms//
-    var sitcomList = ["Friends", "Will & Grace", "Arrested Development", "Parks and Recreation", "The Office", "Scrubs", "That '70s Show", "3rd Rock from the Sun", "It's Always Sunny in Philadelphia", "Community", "The Big Bang Theory", "Two and a Half Men", "I Love Lucy", "Three's Company", "Modern Family", "Seinfeld", "The Middle", "Mr. Bean", "Rules of Engagement",];
+    // Array with a list of TV sitcoms //
+    var sitcomList = ["Friends", "Will & Grace", "Arrested Development", "Parks and Recreation", "The Office", "Scrubs", "That '70s Show", "3rd Rock from the Sun", "It's Always Sunny in Philadelphia", "Community", "The Big Bang Theory", "Two and a Half Men", "Modern Family", "Seinfeld", "New Girl", "Mr. Bean", "Rules of Engagement",];
     sitcomList.sort();
 
 
-    //Global var that link to their $counterparts//
-    var btnHolder = $("#btnHolder");
+    // Global variable that link to their $counterparts //
+    var btnHolder = $("#sitcomButtons");
     var button = $(".btn");
     var mainText = $("#mainText");
 
 
-    //A for loop which takes each item from the array and makes it into a button//
+    // A for loop which takes each item from the array and makes it into a button //
     for (i = 0; i < sitcomList.length; i++) {
         var sitcom = $('<button type="button" class="btn btn-success p-2 m-1">').text
             (sitcomList[i]);
@@ -21,7 +21,7 @@ $(document).ready(function () {
     }
 
 
-    //A function for what happens when you click on a button//
+    // A function for what happens when you click on a button //
 
     function clickFunction() {
         button = $(".btn");

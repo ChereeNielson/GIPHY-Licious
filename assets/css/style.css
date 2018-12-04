@@ -1,3 +1,31 @@
 html {
-    background: url("../images/red.jpg") no-repeat center center fixed;
+    background: url("../images/bean3.png") no-repeat center center fixed,
+                url("../images/red.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: contain;
+    /* -moz-background-size: cover;
+    -o-background-size: cover; */
+    /* background-position: 0 100%; */
+    background-position: center;
+}
+
+body[class=bg-secondary] {
+    margin: 0;
+}
+
+#sitcomButtons {
+    
+}
+
+h1 {
+    font-size: 6vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: center;
+}
+
+button[type=button] {
+    background-color: black;
+    border: 1px solid;
+    border-color: red;
 }
