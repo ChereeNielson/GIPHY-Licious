@@ -1,5 +1,5 @@
 <p align="center">
-<img align="center" src="..images/api_giphy_header.gif" width="100%" alt="API Giphy logo"/>
+<img align="center" src="../assets/images/api_giphy_header.gif" width="100%" alt="API Giphy logo"/>
 </p>
 
 # GIPHY-Licious API Documentation
