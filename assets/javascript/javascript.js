@@ -24,7 +24,7 @@ $(document).ready(function () {
     button.click(function () {
         mainText.empty();
         let newSitcom = $(this).attr("sitcom-name");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + newSitcom +"&api_key=3cIsIeloVUjq1nketG9GZn3hRsKSFI3S&limit=10";
+        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + newSitcom +"&api_key=7ZEtITN9IDn8IgivJV70LFjUj7FnFZ6s&limit=10";
        
         $.ajax({
             url: queryURL,
@@ -36,4 +36,5 @@ $(document).ready(function () {
     }
 
     // Button click function for what happens when you click on the giphy or still //
+
 });
