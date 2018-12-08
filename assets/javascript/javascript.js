@@ -4,12 +4,9 @@ sitcomList.sort();
 
 // Global variables that link to their $counterparts //
 let sitcomButtons = $("#sitcom-buttons");
-let mainText = $("#main-text");
-
 
 // Function re-renders the HTML to display the appropriate sitcom //
 function displaySitcom() {
-    mainText.empty();
     
     let sitcom = $(this).attr("data-name");
     console.log(sitcom);
