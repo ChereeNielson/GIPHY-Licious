@@ -10,19 +10,64 @@ html {
     background-color: black;
 }
 
-body[class=bg-secondary] {
-    margin: 0;
+body {
+    
 }
 
-h1 {
-    font-size: 6vw;
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
-    text-align: center;
+.container-fluid {
+    /* which one works best? */
+    width: 100%;
+    margin: 0 auto;
+    color: white;
 }
 
-button[type=button] {
+#top-section {
+    margin-top: 50px;
+    background-color: black;
+    padding: 30px 120px;
+}
+
+input#sitcom-input {
+    margin-bottom: 10px;
+}
+
+input#add-sitcom {
+    
+}
+
+#sitcom-dump {
+    background: black;
+}
+
+/* button[type=button] {
     background-color: black;
     border: 1px solid;
     border-color: red;
+} */
+
+.sitcom-btn {
+    background-color: black;
+    color: white;
+    border: 1px solid;
+    border-color: red;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+
+}
+
+label {
+    font-size: 20px;
+    font-family: 'KoHo', sans-serif;
+}
+
+.sitcom {
+    padding: 10px;
+}
+
+#sitcom-view {
+    justify-content: space-evenly;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
 }

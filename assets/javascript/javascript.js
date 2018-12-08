@@ -10,6 +10,7 @@ let mainText = $("#main-text");
 // Function re-renders the HTML to display the appropriate sitcom //
 function displaySitcom() {
     mainText.empty();
+    
     let sitcom = $(this).attr("data-name");
     console.log(sitcom);
     // API Key = 7ZEtITN9IDn8IgivJV70LFjUj7FnFZ6s //
@@ -24,13 +25,13 @@ function displaySitcom() {
 
         // Create a for loop to capture each sitcom from the array and turn it into a button //
         // for (let i = 0; i < sitcomList.length; i++) {
-
-        // Loop through each result item //
-        for (let i = 0; i < response.data.length; i++) {
             // let sitcomLoop = $('<button type="button" class="btn btn-success p-2 m-1">').text(sitcomList[i]);
             // sitcomLoop.attr("sitcom-name", sitcomList[i]);
             // sitcomButtons.append(sitcom);
             // let button = $(".btn");
+
+        // Loop through each result item //
+        for (let i = 0; i < response.data.length; i++) {
             
             // Create a div to hold the sitcom //
             let sitcomDiv = $("<div class='sitcom'>");
@@ -46,10 +47,10 @@ function displaySitcom() {
             let sitcomImage = $("<img class='image'>");
 
             sitcomImage.attr("src", results[i].images.fixed_height_still.url);
-            sitcomImage.attr('data-still', results[i].images.fixed_height_still.url);
-            sitcomImage.attr('data-state', 'still');
-            sitcomImage.addClass('gif');
-            sitcomImage.attr('data-animate', results[i].images.fixed_height.url);
+            sitcomImage.attr("data-still", results[i].images.fixed_height_still.url);
+            sitcomImage.attr("data-state", "still");
+            sitcomImage.addClass("gif");
+            sitcomImage.attr("data-animate", results[i].images.fixed_height.url);
 
             // Display the rating and the image //
             sitcomDiv.append(p);
@@ -79,7 +80,7 @@ function renderButtons() {
         // Add the button to the buttons-view div //
         $("#sitcom-buttons").append(a);
 
-        // NEED TO CLEAR THE TEXT FIELD AFTER SITCOM HAS BEEN ADDED!!!!!!!!!!!!!!!!!
+        // NEED TO CLEAR OUT THE PREVIOUS GIFS AFTER A NEW SITCOM BUTTON IS CLICKED!!!!!!!!!!!!!!!!
     }
 }
 
@@ -94,22 +95,23 @@ $("#add-sitcom").on("click", function(event) {
 
     // Calling renderButtons which handles the processing of the sitcom array //
     renderButtons();
+    $("#sitcom-input").val("");
 });
 
 // Click function to toggle between active GIPHY and still GIPHY //
-$("#sicom-view").on("click", ".image", function() {
+$("#sitcom-view").on("click", ".image", function() {
     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element //
     let state = $(this).attr("data-state");
-    // If the clicked image's state is still, update its src attribute to what its data-animate value is // Then, set the image's data-state to animate //
-    if (state === "still") {
-      $(this).attr("src", $(this).attr("data-animate"));
-      $(this).attr("data-state", "animate");
-    // Else set src to the data-still value //
-    } else {
-      $(this).attr("src", $(this).attr("data-still"));
-      $(this).attr("data-state", "still");
-    }
-});
+        // If the clicked image's state is still, update its src attribute to what its data-animate value is // Then, set the image's data-state to animate //
+        if (state === "still") {
+                $(this).attr("src", $(this).data("animate"));
+                $(this).attr("data-state", "animate");
+            // Else set src to the data-still value //
+            } else {
+                $(this).attr("src", $(this).data("still"));
+                $(this).attr("data-state", "still");
+            };
+        })
 
 // Add a click event listener to all elements with a class of "sitcom-btn" //
 $(document).on("click", ".sitcom-btn", displaySitcom);
