@@ -1,16 +1,14 @@
 // Initial array of TV Sitcoms //
-let sitcomList = ["Friends", "Will & Grace", "Arrested Development", "Parks and Recreation", "The Office", "Scrubs", "That '70s Show", "3rd Rock from the Sun", "It's Always Sunny in Philadelphia", "Community", "The Big Bang Theory", "Two and a Half Men", "Seinfeld", "New Girl", "Mr. Bean", "Rules of Engagement",];
+let sitcomList = ["Friends", "Will & Grace", "Arrested Development", "Parks and Recreation", "The Office", "Scrubs", "That '70s Show", "Archer", "Community", "Bob's Burgers", "The Big Bang Theory", "Two and a Half Men", "Seinfeld", "New Girl", "Mr. Bean", "Rules of Engagement",];
 sitcomList.sort();
 
 // Global variables that link to their $counterparts //
 let sitcomButtons = $("#sitcom-buttons");
-let mainText = $("#main-text");
 
 
 // Function re-renders the HTML to display the appropriate sitcom //
 function displaySitcom() {
-    mainText.empty();
-    
+        
     let sitcom = $(this).attr("data-name");
     console.log(sitcom);
     // API Key = 7ZEtITN9IDn8IgivJV70LFjUj7FnFZ6s //
@@ -22,13 +20,6 @@ function displaySitcom() {
     }).then(function(response) {
         let {data, meta} = response
         console.log(response);
-
-        // Create a for loop to capture each sitcom from the array and turn it into a button //
-        // for (let i = 0; i < sitcomList.length; i++) {
-            // let sitcomLoop = $('<button type="button" class="btn btn-success p-2 m-1">').text(sitcomList[i]);
-            // sitcomLoop.attr("sitcom-name", sitcomList[i]);
-            // sitcomButtons.append(sitcom);
-            // let button = $(".btn");
 
         // Loop through each result item //
         for (let i = 0; i < response.data.length; i++) {
@@ -79,8 +70,6 @@ function renderButtons() {
         a.text(sitcomList[i]);
         // Add the button to the buttons-view div //
         $("#sitcom-buttons").append(a);
-
-        // NEED TO CLEAR OUT THE PREVIOUS GIFS AFTER A NEW SITCOM BUTTON IS CLICKED!!!!!!!!!!!!!!!!
     }
 }
 
@@ -100,6 +89,7 @@ $("#add-sitcom").on("click", function(event) {
 
 // Click function to toggle between active GIPHY and still GIPHY //
 $("#sitcom-view").on("click", ".image", function() {
+
     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element //
     let state = $(this).attr("data-state");
         // If the clicked image's state is still, update its src attribute to what its data-animate value is // Then, set the image's data-state to animate //
@@ -115,6 +105,7 @@ $("#sitcom-view").on("click", ".image", function() {
 
 // Add a click event listener to all elements with a class of "sitcom-btn" //
 $(document).on("click", ".sitcom-btn", displaySitcom);
+    // $("#sitcom-view").empty();
 
 // Calling the renderButtons function to display the intial buttons //
 renderButtons();

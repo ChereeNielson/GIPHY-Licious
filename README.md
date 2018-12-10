@@ -1,17 +1,34 @@
 <p align="center">
-<img align="center" src="../images/api_giphy_header.gif" width="100%" alt="API Giphy logo"/>
+<img align="center" src="/assets/images/api_giphy_header.gif" width="100%" alt="API Giphy logo"/>
 </p>
 
-# GIPHY-Licious API Documentation
+# GIPHY-Licious #
 
-**6/20/17 Update:** The documentation that used to live here has moved! Check out the [new home for our docs](http://developers.giphy.com/docs) on our standalone developer portal, [GIPHY Developers](http://developers.giphy.com)!
+Get gifs from your favorite TV Sitcoms at the click of a button! :heart: :tv: :heart:
 
-[GIPHY](http://www.giphy.com) is an animated [GIF](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) search engine. The GIPHY API is a series of JSON read endpoints that allow you to integrate the features of GIPHY's search engine into your project or app. 
+## What this project does ## 
 
-To view detailed documentation and code samples and to be assigned API Keys for your apps, visit [GIPHY Developers](http://developers.giphy.com), our developer portal.
+This project makes use of the [`GIPHY API`](https://developers.giphy.com/) to access GIPHY's enormous gif library. `jQuery` is used to display gifs in the `DOM`. Buttons are created with a `for loop`, gifs and their static images are toggled with an `if-statement`, and user input is collected with `on-click functions`.
 
-# Reporting Issues
+## How users can get started with this project ## 
 
-To report issues with the API or its documentation, please use the [GitHub Issues](https://github.com/Giphy/GiphyAPI/issues) tab for this repo. We appreciate your feedback!
+1. **[Open GIPHY-Licious](https://chereenielson.github.io/GIPHY-Licious/)**
+    - Preloaded buttons are provided with some of <i>my</i> favorite TV Sitcoms. Now add <i>your</i> favorite TV Sitcoms to generate a new button!
 
-# Learn more about [Engineering at Giphy](https://engineering.giphy.com) 
+2. **Load some gifs**
+    - When you click on a button, 10 images from the GIPHY library will load on the page. 
+
+3. **Animate the gifs**
+    - Click any still image to animate the gif! Click the gif again to still the image.
+
+4. **Animate the gifs**
+    - Simply refresh the page to remove any new buttons added and clear out the gifs. 
+    
+![I'm boring myself just talking about it.](https://i.giphy.com/media/l3bwrFzIUMEM0/200.gif)
+
+## Where users can get help with this project ##
+
+If you have any questions about this really rudimentary project, initiate a new pull request and leave a comment.
+
+## Who maintains this project ## 
+This project is lovingly (and casually) maintained by me, @[ChereeNielson](https://github.com/ChereeNielson). Thanks for checking it out.
