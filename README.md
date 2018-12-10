@@ -21,14 +21,14 @@ This project makes use of the [`GIPHY API`](https://developers.giphy.com/) to ac
 3. **Animate the gifs**
     - Click any still image to animate the gif! Click the gif again to still the image.
 
-4. **Animate the gifs**
+4. **Start over with a new set of gif**
     - Simply refresh the page to remove any new buttons added and clear out the gifs. 
     
-![I'm boring myself just talking about it.](https://i.giphy.com/media/l3bwrFzIUMEM0/200.gif)
+![Are we having fun yet?](https://media.giphy.com/media/LxdS7fXgbjsGc/giphy.gif)
 
 ## Where users can get help with this project ##
 
-If you have any questions about this really rudimentary project, initiate a new pull request and leave a comment.
+If you have any questions about this GIPHY-Licious project, initiate a new pull request and leave a comment.
 
 ## Who maintains this project ## 
 This project is lovingly (and casually) maintained by me, @[ChereeNielson](https://github.com/ChereeNielson). Thanks for checking it out.
