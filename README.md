@@ -2,7 +2,7 @@
 <img align="center" src="/assets/images/api_giphy_header.gif" width="100%" alt="API Giphy logo"/>
 </p>
 
-# GIPHY-Licious #
+# GIPHY-Licious! #
 
 Get gifs from your favorite TV Sitcoms at the click of a button! :heart: :tv: :heart:
 
@@ -16,15 +16,15 @@ This project makes use of the [`GIPHY API`](https://developers.giphy.com/) to ac
     - Preloaded buttons are provided with some of <i>my</i> favorite TV Sitcoms. Now add <i>your</i> favorite TV Sitcoms to generate a new button!
 
 2. **Load some gifs**
-    - When you click on a button, 10 images from the GIPHY library will load on the page. 
+    - With just a click of a button, 10 images from the GIPHY library will load on the page below. 
 
 3. **Animate the gifs**
     - Click any still image to animate the gif! Click the gif again to still the image.
 
-4. **Start over with a new set of gif**
+4. **Start over with a new set of gifs**
     - Simply refresh the page to remove any new buttons added and clear out the gifs. 
     
-![Are we having fun yet?](https://media.giphy.com/media/LxdS7fXgbjsGc/giphy.gif)
+![Are we having fun yet?](https://gph.is/1LAqD8X)
 
 ## Where users can get help with this project ##
 
