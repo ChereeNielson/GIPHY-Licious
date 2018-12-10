@@ -24,7 +24,7 @@ This project makes use of the [`GIPHY API`](https://developers.giphy.com/) to ac
 4. **Start over with a new set of gifs**
     - Simply refresh the page to remove any new buttons added and clear out the gifs. 
     
-![Are we having fun yet?](https://gph.is/1LAqD8X)
+![Are we having fun yet?](https://media.giphy.com/media/LxdS7fXgbjsGc/giphy-downsized.gif)
 
 ## Where users can get help with this project ##
 
