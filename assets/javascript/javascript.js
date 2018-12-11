@@ -11,7 +11,7 @@ function displaySitcom() {
     let sitcom = $(this).attr("data-name");
     console.log(sitcom);
     // API Key = 7ZEtITN9IDn8IgivJV70LFjUj7FnFZ6s //
-    let queryURL = "http://api.giphy.com/v1/gifs/search?q=" + sitcom + "&api_key=7ZEtITN9IDn8IgivJV70LFjUj7FnFZ6s&limit=10";
+    let queryURL = "https://api.giphy.com/v1/gifs/search?q=" + sitcom + "&api_key=7ZEtITN9IDn8IgivJV70LFjUj7FnFZ6s&limit=10";
 
     $.ajax({
         url: queryURL,
