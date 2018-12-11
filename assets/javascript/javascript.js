@@ -4,20 +4,10 @@ sitcomList.sort();
 
 // Global variables that link to their $counterparts //
 let sitcomButtons = $("#sitcom-buttons");
-<<<<<<< HEAD
-
 
 // Function re-renders the HTML to display the appropriate sitcom //
 function displaySitcom() {
         
-=======
-
-// Function re-renders the HTML to display the appropriate sitcom //
-function displaySitcom() {
-
-// Function re-renders the HTML to display the appropriate sitcom //
-function displaySitcom() {
->>>>>>> refs/remotes/origin/master
     let sitcom = $(this).attr("data-name");
     console.log(sitcom);
     // API Key = 7ZEtITN9IDn8IgivJV70LFjUj7FnFZ6s //
